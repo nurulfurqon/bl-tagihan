@@ -1,0 +1,18 @@
+// Vertical
+$value-vertical-list: (53);
+@each $size in $value-vertical-list {
+  .sp-v--#{$size} {
+    width: 100%;
+    height: #{$size}px;
+  }
+}
+
+// Horizontal
+$value-horizontal-list: (12);
+
+@each $size in $value-horizontal-list {
+  .sp-h--#{$size} {
+    width: #{$size}px;
+    height: 100%;
+  }
+}

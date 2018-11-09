@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_back</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/-Icon-Back" transform="translate(-3.000000, -3.000000)" fill="#25282F" fill-rule="nonzero">
+            <path d="M21,12 C21,11.37868 20.4963,10.875 19.875,10.875 L7.305,10.875 L12.795,5.385 C13.2341,4.94593 13.2341,4.23407 12.795,3.795 C12.35593,3.355933 11.64407,3.355934 11.205,3.795 L4.28571,10.71429 C3.575634,11.42437 3.575634,12.57563 4.28571,13.2857 L11.205,20.205 C11.64407,20.6441 12.35593,20.6441 12.795,20.205 C13.2341,19.7659 13.2341,19.0541 12.795,18.615 L7.305,13.125 L19.875,13.125 C20.4963,13.125 21,12.62132 21,12 Z" id="ic_back"></path>
+        </g>
+    </g>
+</svg>
