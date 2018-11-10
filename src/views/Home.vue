@@ -10,7 +10,7 @@
       <div class="sp-v--12"></div>
       <div class="box-input">
         <div class="input-group">
-          <input type="text" v-model="inputTelepon" class="input" name="" placeholder="No Telepon" maxlength="12">
+          <input v-numericOnly type="text" v-model="inputTelepon" class="input" name="" placeholder="No Telepon" maxlength="12">
           <img v-if="inputTelepon.length === 12" class="icon2" src="../assets/icons/telkom.png" />
           <div class="sp-h--16"></div>
           <img class="icon" src="../assets/icons/account-card-details.png" />
@@ -87,6 +87,30 @@ export default {
     Banner,
     Popup,
   },
+  directives: {
+    numericOnly: {
+      bind(el, binding, vnode) {
+        el.addEventListener('keydown', (e) => {
+          if ([46, 8, 9, 27, 13, 110, 190].indexOf(e.keyCode) !== -1 ||
+              // Allow: Ctrl+A
+              (e.keyCode === 65 && e.ctrlKey === true) ||
+              // Allow: Ctrl+C
+              (e.keyCode === 67 && e.ctrlKey === true) ||
+              // Allow: Ctrl+X
+              (e.keyCode === 88 && e.ctrlKey === true) ||
+              // Allow: home, end, left, right
+              (e.keyCode >= 35 && e.keyCode <= 39)) {
+              // let it happen, don't do anything
+              return
+          }
+          // Ensure that it is a number and stop the keypress
+          if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+              e.preventDefault()
+          }
+        })
+      }
+    }
+  }
 };
 </script>
 
