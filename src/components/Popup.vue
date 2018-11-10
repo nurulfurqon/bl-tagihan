@@ -2,14 +2,14 @@
 <div v-if="title !== null && text !== null">
   <div v-if="popupActive" @click="popupActive = !popupActive; removeTersalin()" class="overlay"></div>
   <div class="popup" :style="bottomVal()">
-    <div class="popup_header" :style="bgColorVal()">
+    <div @click="popupActive = !popupActive; removeTersalin()" class="popup_header" :style="bgColorVal()">
       <div class="popup_header_content">
         <img :src="require(`../assets/icons/${icon}.svg`)" class="icon" />
         <div class="sp-h--8"></div>
         <p class="title">{{ title }}</p>
       </div>
       <div class="popup_header_content">
-         <img @click="popupActive = !popupActive; removeTersalin()" :src="require(`../assets/icons/${iconDown()}.svg`)" class="icon-two" />
+         <img :src="require(`../assets/icons/${iconDown()}.svg`)" class="icon-two" />
       </div>
     </div>
     <div class="popup_content">
