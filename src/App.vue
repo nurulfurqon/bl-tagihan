@@ -14,18 +14,18 @@
 @import './assets/scss/base/_base.reset';
 @import './assets/scss/base/_base.separator';
 body {
-  background: #f4f4f4;
+  background: #fff;
 }
 
 #app {
   position: absolute;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #25282F;
   width: 100%;
-  height: auto;
+  min-height: 100%;
   display: flex;
   justify-content: center;
 }

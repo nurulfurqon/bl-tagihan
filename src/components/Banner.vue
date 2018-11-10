@@ -13,19 +13,19 @@
 </template>
 
 <script>
-  export default {
-    name: 'Banner',
-    props: {
-      title: {
-        type: String,
-        default: null
-      },
-      text: {
-        type: String,
-        defaul: null
-      }
-    }
-  }
+export default {
+  name: 'Banner',
+  props: {
+    title: {
+      type: String,
+      default: null,
+    },
+    text: {
+      type: String,
+      defaul: null,
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

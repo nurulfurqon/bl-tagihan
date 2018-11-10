@@ -1,5 +1,5 @@
 // Vertical
-$value-vertical-list: (53);
+$value-vertical-list: (8,12,16,53);
 @each $size in $value-vertical-list {
   .sp-v--#{$size} {
     width: 100%;
@@ -8,7 +8,7 @@ $value-vertical-list: (53);
 }
 
 // Horizontal
-$value-horizontal-list: (12);
+$value-horizontal-list: (8,16,12);
 
 @each $size in $value-horizontal-list {
   .sp-h--#{$size} {

@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
+import CheckoutTelkom from './views/CheckoutTelkom.vue';
 
 Vue.use(Router);
 
@@ -12,6 +13,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home,
+    },
+    {
+      path: '/checkout-telkom',
+      name: 'CheckoutTelkom',
+      component: CheckoutTelkom,
     },
     {
       path: '/about',

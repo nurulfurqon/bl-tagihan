@@ -12,23 +12,23 @@
 </template>
 
 <script>
-  export default {
-    name: 'Header',
-    props: {
-      iconLeft: {
-        type: String,
-        default: null
-      },
-      title: {
-        type: String,
-        default: null
-      },
-      iconRight: {
-        type: String,
-        default: null
-      }
-    }
-  }
+export default {
+  name: 'Header',
+  props: {
+    iconLeft: {
+      type: String,
+      default: null,
+    },
+    title: {
+      type: String,
+      default: null,
+    },
+    iconRight: {
+      type: String,
+      default: null,
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">
