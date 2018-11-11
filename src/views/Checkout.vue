@@ -15,7 +15,7 @@
         <div class="sp-v--8"></div>
         <div class="card_content_text">
           <p class="text-left">No. Pelanggan</p>
-          <p class="text-right">141129110591</p>
+          <p class="text-right">{{ $route.params.id }}</p>
         </div>
       </div>
     </div>
@@ -52,7 +52,7 @@
       <div class="card_content">
         <div class="card_content_text">
           <p class="text-right" style="font-weight: 600;">Total Belanja</p>
-          <p class="text-right" style="font-weight: 600;">Rp459.750</p>
+          <p class="text-right" style="font-weight: 600;">Rp{{ $route.params.jumlah }}</p>
         </div>
         <div class="sp-v--12"></div>
         <div class="button-bayar">
@@ -67,7 +67,7 @@
 import Header from '../components/Header.vue';
 
 export default {
-  name: 'CheckoutTelkom',
+  name: 'Checkout',
   data() {
     return {
       kodePromo: '',
@@ -81,7 +81,7 @@ export default {
   methods: {
     useKode() {
       if(this.kodePromo.length > 1) {
-        if(this.kodePromo === 'BAYARTELKOM') {
+        if(this.kodePromo === 'BAYARTELKOM' || this.kodePromo === 'NONTONTERUS') {
           this.showNotif = true;
           this.infoPromo = 'Potongan CASHBACK Rp10.000';
         } else {
@@ -176,6 +176,7 @@ export default {
       .input-kode {
         width: 100%;
         outline: none;
+        border: none;
         font-size: 14px;
         color: #52565F;
         letter-spacing: 0;

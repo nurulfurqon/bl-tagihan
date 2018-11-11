@@ -105,7 +105,7 @@ export default {
   .popup {
     position: fixed;
     display: flex;
-    width: 100%;
+    width: inherit;
     transition: all .3s ease-in-out;
     flex-direction: column;
     z-index: 1112;

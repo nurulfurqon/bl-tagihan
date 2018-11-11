@@ -1,7 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
-import CheckoutTelkom from './views/CheckoutTelkom.vue';
+import Checkout from './views/Checkout.vue';
+import Tv from './views/TvKabel.vue';
 
 Vue.use(Router);
 
@@ -15,17 +16,14 @@ export default new Router({
       component: Home,
     },
     {
-      path: '/checkout-telkom',
-      name: 'CheckoutTelkom',
-      component: CheckoutTelkom,
+      path: '/checkout/:id/:jumlah',
+      name: 'Checkout',
+      component: Checkout,
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
+      path: '/tv',
+      name: 'tvkabel',
+      component: Tv,
     },
   ],
 });

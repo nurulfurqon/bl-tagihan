@@ -1,5 +1,5 @@
 // Vertical
-$value-vertical-list: (8,12,16,53);
+$value-vertical-list: (8,12,16,53,58);
 @each $size in $value-vertical-list {
   .sp-v--#{$size} {
     width: 100%;
