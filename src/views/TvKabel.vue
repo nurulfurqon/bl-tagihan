@@ -13,7 +13,7 @@
       <div v-else @click="widthScreen = 0;" class="box-input">
         <div v-for="data in filterLayanan" :key="data.id" class="input-group" style="align-items: center;">
           <p class="text" style="flex: 1; text-align: left;">{{ data.name }}</p>
-          <img :src="require(`../assets/icons/${data.logo}.png`)" style="width: 24px; margin-right: 8px;" />
+          <img :src="require(`../assets/icons/${data.logo}.png`)" style="margin-right: 4px;" :style="`width: ${data.sizeLogo}px;`" />
           <div class="sp-h--16"></div>
           <img src="../assets/icons/ic_visibility_second.svg" style="height: 16px; margin-right: 6px;" />
         </div>
@@ -110,42 +110,50 @@ export default {
         {
           id: 1,
           name: 'CBN',
-          logo: 'logo_cbn'
+          logo: 'logo_cbn',
+          sizeLogo: 22
         },
         {
           id: 2,
           name: 'BigTv',
-          logo: 'logo_bigtv'
+          logo: 'logo_bigtv',
+          sizeLogo: 22
         },
         {
           id: 3,
           name: 'First Media',
-          logo: 'logo_first-media'
+          logo: 'logo_first-media',
+          sizeLogo: 22
         },
         {
           id: 4,
           name: 'Indihome',
-          logo: 'logo_indihome'
+          logo: 'logo_indihome',
+          sizeLogo: 40
         },
         {
           id: 5,
           name: 'MNC Vision',
-          logo: 'logo_vision'
+          logo: 'logo_vision',
+          sizeLogo: 40
         },
         {
           id: 6,
           name: 'K-Vision',
-          logo: 'logo_kvision'
+          logo: 'logo_kvision',
+          sizeLogo: 40
         },
         {
           id: 7,
           name: 'NexMedia',
-          logo: 'logo_nextmedia'
+          logo: 'logo_nextmedia',
+          sizeLogo: 40
         },
         {
           id: 8,
           name: 'Transvision',
-          logo: 'logo_transvision'
+          logo: 'logo_transvision',
+          sizeLogo: 40
         }
       ]
     };
