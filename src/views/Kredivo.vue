@@ -2,7 +2,7 @@
   <div style="width: inherit; min-height: 100%; background: #fcfcfc;">
     <Header icon-left="ic_back" icon-right="ic_history" title="Multi Finance" />
     <div class="sp-v--53"></div>
-    <Banner title="Hi, Burhanudin Yusuf !" text="Pilih layanan dan masukkan No. Tagihanmu ya"/>
+    <Banner title="Hi, Burhanudin Yusuf !" text="Periksa kembali tagihan mu dan segera bayar ya."/>
     <div class="form-set">
       <div v-if="idLayanan === ''" @click="widthScreen = 0;" class="box-input">
         <div class="input-group" style="align-items: center;">
@@ -21,23 +21,25 @@
       <div class="sp-v--12"></div>
       <div class="box-input">
         <div class="input-group">
-          <input v-numericOnly type="text" v-model="inputTelepon" class="input" name="" placeholder="No. Kontrak" maxlength="12">
+          <input v-numericOnly type="tel" @click="keyMonitor" @keyup.enter="$event.target.blur() + keyMonitorFix()" v-model="inputTelepon" class="input" name="" placeholder="No. Kontrak" maxlength="12">
           <div class="sp-h--16"></div>
           <img class="icon" src="../assets/icons/account-card-details.png" />
         </div>
       </div>
       <div class="sp-v--12"></div>
-      <div v-if="inputTelepon.length === 12 && idLayanan !== ''" class="tagihan">
+      <div v-if="inputTelepon == 7837268736 && idLayanan !== ''" class="tagihan">
         <p class="text">
           Masukkan Nominal Pembayaran. <br>
           Pembayaran min. Rp10.000
         </p>
         <div class="box-input" style="margin-top: 4px;">
           <div class="input-group">
-            <input v-numericOnly type="text" v-model="inputTagihan" class="input" name="" placeholder="Pembayaran">
+            <input v-numericOnly type="tel" @click="keyMonitor" @keyup.enter="$event.target.blur() + keyMonitorFix()" v-model="inputTagihan" class="input" name="" placeholder="Pembayaran">
           </div>
         </div>
-        <span v-if="" class="error-text">Nominal kurang dari Rp10.000</span>
+        <span v-if="inputTagihan < 10000 && inputTagihan !== ''" class="error-text">Nominal kurang dari Rp10.000</span>
+        <span v-if="inputTagihan > 2000000 && inputTagihan !== ''" class="error-text">Maks. pembayaran Rp2.000.000</span>
+        <div class="sp-v--12"></div>
       </div>
     </div>
     <!-- Transaksi -->
@@ -47,18 +49,18 @@
       </div>
       <div class="transaksi_content">
         <div class="transaksi_content_text">
+          <p class="text-first">No. Kontrak</p>
+          <p class="text-second">{{ inputTelepon }}</p>
+        </div>
+
+        <div class="transaksi_content_text">
           <p class="text-first">Name</p>
           <p class="text-second">Burhanudin Yusuf</p>
         </div>
 
         <div class="transaksi_content_text">
-          <p class="text-first">No. Pelanggan</p>
-          <p class="text-second">{{ inputTelepon }}</p>
-        </div>
-
-        <div class="transaksi_content_text">
           <p class="text-first">Tagihan</p>
-          <p class="text-second">Rp1.390.200</p>
+          <p class="text-second">Rp{{ formatRp(inputTagihan) }}</p>
         </div>
 
         <div class="transaksi_content_text">
@@ -70,9 +72,9 @@
       <div class="transaksi_content">
         <div class="transaksi_content_text">
           <p class="text-first text-first--medium">TOTAL TAGIHAN</p>
-          <p class="text-second text-second--medium">Rp1.390.200</p>
+          <p class="text-second text-second--medium">Rp{{ formatRp(Number(inputTagihan) + 2500) }}</p>
         </div>
-        <router-link :to="`/checkout/${inputTelepon}/1.390.200`" class="button-link">
+        <router-link :to="`/checkoutkredivo/${inputTelepon}/${inputTagihan}`" class="button-link">
           <div class="button-bayar">
             <p class="text">Bayar</p>
           </div>
@@ -81,7 +83,7 @@
     </div>
     <div class="sp-v--58"></div>
     <!-- Popup -->
-    <Popup title="Promo Terbaru" icon="ic_voucherfill" :text="textPromo" kode="NONTONTERUS" />
+    <Popup :positionPopup="popUpState" title="Promo Terbaru" icon="ic_voucherfill" :text="textPromo" kode="KREDIVOHEMAT" />
 
     <!-- Search Media -->
     <div class="search-layanan" :style="`right: ${widthScreen}px`">
@@ -114,10 +116,11 @@ export default {
   name: 'kredivo',
   data() {
     return {
-      textPromo: 'Dapatkan cashback sebesar Rp10.000 setiap pembayaran TV Kabel. Berlaku di Aplikasi',
+      textPromo: 'Dapatkan cashback pembayaran tagihan Kredivo sebesar 50% hanya berlaku di aplikasi.',
       inputTelepon: '',
       inputTagihan: '',
       idLayanan: '',
+      popUpState: 'fixed',
       widthScreen: `-${window.innerWidth}`,
       dataLayanan: [
         {
@@ -179,6 +182,28 @@ export default {
   methods: {
     closeSearch() {
       this.widthScreen = `-${window.innerWidth}`;
+    },
+    errorNotif() {
+      if (this.inputTagihan < 10000 || this.inputTagihan > 2000000) {
+        return 'error-box';
+      }
+    },
+    formatRp(value) {
+      if (this.inputTagihan > 0) {
+        return value.toString().replace(/(\d)(?=(\d{3})+(?:\.\d+)?$)/g, "$1\.");
+      }
+    },
+    keyMonitor() {
+      if (this.popUpState == 'fixed') {
+        this.popUpState = 'absolute';
+        console.log(this.popUpState)
+      }
+    },
+    keyMonitorFix() {
+      if (this.popUpState == 'absolute') {
+        this.popUpState = 'fixed';
+        console.log(this.popUpState);
+      }
     }
   },
   computed: {
@@ -217,6 +242,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.error-box {
+  border: 1px solid #FF766D;
+}
 .form-set {
   position: relative;
   display: flex;

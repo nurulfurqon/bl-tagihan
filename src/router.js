@@ -4,6 +4,7 @@ import Home from './views/Home.vue';
 import Checkout from './views/Checkout.vue';
 import Tv from './views/TvKabel.vue';
 import Kredivo from './views/Kredivo.vue';
+import CheckoutKredivo from './views/CheckoutKredivo.vue';
 
 Vue.use(Router);
 
@@ -19,6 +20,11 @@ export default new Router({
       path: '/checkout/:id/:jumlah',
       name: 'Checkout',
       component: Checkout,
+    },
+    {
+      path: '/checkoutkredivo/:id/:jumlah',
+      name: 'CheckoutKredivo',
+      component: CheckoutKredivo,
     },
     {
       path: '/tv',
