@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="130px" viewBox="0 0 360 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Untitled-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="360" height="130"></rect>
+        <rect id="path-3" x="0" y="0" width="390" height="591"></rect>
+        <linearGradient x1="50%" y1="73.3962264%" x2="50%" y2="10.3679245%" id="linearGradient-5">
+            <stop stop-color="#F4A8B1" offset="0%"></stop>
+            <stop stop-color="#EA5164" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-11.8537275%" x2="50%" y2="74.6849605%" id="linearGradient-6">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-11.8508499%" x2="50%" y2="74.68682%" id="linearGradient-7">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-41.9416667%" x2="50%" y2="69.725%" id="linearGradient-8">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-41.1565217%" x2="50%" y2="75.3652174%" id="linearGradient-9">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="📱-Mobile---ALCHEMY" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01.00---Telkom---Blank" transform="translate(0.000000, -80.000000)">
+            <g id="Banner" transform="translate(0.000000, 80.000000)">
+                <g id="Untitled-1">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#EA5164" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <rect id="Rectangle" fill="#EA5164" fill-rule="nonzero" mask="url(#mask-2)" x="0" y="0" width="360" height="110"></rect>
+                    <g mask="url(#mask-2)">
+                        <g transform="translate(0.000000, -4.000000)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use id="Mask" stroke="none" fill="#F9FAFB" fill-rule="nonzero" xlink:href="#path-3"></use>
+                            <g id="Untitled-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" mask="url(#mask-4)">
+                                <g transform="translate(-9.000000, -414.000000)">
+                                    <rect id="Rectangle" fill="url(#linearGradient-5)" x="9.41284404" y="0" width="389.724771" height="569.75"></rect>
+                                    <polygon id="Path" fill-opacity="0.5" fill="url(#linearGradient-6)" style="mix-blend-mode: soft-light;" points="108.372518 523.11736 104.16208 523.11736 104.16208 477 87.3460782 477 53.7011991 493.771699 53.7011991 516.660287 36.8336937 516.660287 36.8336937 489.702332 4 489.702332 4 585.980744 18.1635542 585.980744 36.8336937 585.980744 52.3041577 585.980744 52.3041577 586 88.7431197 586 101.361559 586 105.565559 586 108.372518 586 123.78504 586 135 586 135 523.11736 135 490.973207 108.372518 490.973207"></polygon>
+                                    <polygon id="Path" fill-opacity="0.5" fill="url(#linearGradient-7)" style="mix-blend-mode: soft-light;" points="326.746501 444 326.746501 494.644004 317.708457 494.644004 317.708457 474.841557 312.085502 474.841557 312.085502 467.860378 282.56983 456.693054 272.731273 456.693054 272.731273 474.841557 267.108319 474.841557 267.108319 480.425219 247.431204 480.425219 247.431204 498.567312 239 498.567312 239 553 247.431204 553 261.485364 553 267.108319 553 272.731273 553 274.138626 553 300.839592 553 317.708457 553 317.708457 552.980768 326.746501 552.980768 344.177016 552.980768 370 552.980768 370 444"></polygon>
+                                    <path d="M391,501.215311 C342.163943,484.706463 287.998019,504.696143 237.141159,495.943859 C175.515106,485.350751 124.616147,433.698891 62.047053,433.004398 C40.0239464,432.809511 18.4352569,439.095121 0,451.06958 L0,778 L390.68846,778 L391,501.215311 Z" id="Path" fill="#000000" opacity="0.4" style="mix-blend-mode: soft-light;"></path>
+                                    <path d="M7,383.867866 C29.072989,380.568801 51.4074463,387.158557 72.0887489,395.481579 C87.9624078,401.862004 101.018956,412.32858 118.275867,417.000859 C154.932042,426.923174 191.93403,420.559495 228.488991,413.785527 C252.468169,409.339326 276.843766,405.236428 301.135019,407.421849 C321.672936,409.272339 358.295373,418.784364 368.880624,439.064402 C372.532746,446.064448 370.356655,459.252334 370.356655,467.02272 L370.356655,831 L10.4328263,831 L7,383.867866 Z" id="Path" fill="#000000" opacity="0.2" style="mix-blend-mode: soft-light;"></path>
+                                    <polygon id="Path" fill="url(#linearGradient-8)" opacity="0.3" style="mix-blend-mode: soft-light;" points="32.4342105 470 6 470 6 529.675 28.5657895 529.675 28.5657895 547 55 547 55 487.325 32.4342105 487.325"></polygon>
+                                    <polygon id="Path" fill="url(#linearGradient-9)" opacity="0.3" style="mix-blend-mode: soft-light;" points="199.692308 493.156522 199.692308 479 172.884615 479 172.884615 493.156522 150 493.156522 150 553 176.807692 553 176.807692 538.843478 191.192308 538.843478 191.192308 553 218 553 218 493.156522"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

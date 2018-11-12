@@ -1,19 +1,19 @@
 <template>
   <div style="width: inherit; min-height: 100%; background: #fcfcfc;">
-    <Header icon-left="ic_back" icon-right="ic_history" title="TV Kabel" />
+    <Header icon-left="ic_back" icon-right="ic_history" title="Multi Finance" />
     <div class="sp-v--53"></div>
-    <Banner title="Hi, Burhanudin Yusuf !" text="Pilih layanan dan masukkan No. Pelanggan kamu ya."/>
+    <Banner title="Hi, Burhanudin Yusuf !" text="Pilih layanan dan masukkan No. Tagihanmu ya"/>
     <div class="form-set">
       <div v-if="idLayanan === ''" @click="widthScreen = 0;" class="box-input">
         <div class="input-group" style="align-items: center;">
-          <p class="text" style="flex: 1; color: #80868F !important; text-align: left;">Pilih Layanan TV Kabel</p>
+          <p class="text" style="flex: 1; color: #80868F !important; text-align: left;">Pilih Layanan Multi Finance</p>
           <img src="../assets/icons/ic_visibility_second.svg" style="height: 16px; margin-right: 6px;" />
         </div>
       </div>
       <div v-else @click="widthScreen = 0;" class="box-input">
         <div v-for="data in filterLayanan" :key="data.id" class="input-group" style="align-items: center;">
           <p class="text" style="flex: 1; text-align: left;">{{ data.name }}</p>
-          <img :src="require(`../assets/icons/${data.logo}.png`)" style="margin-right: 4px;" :style="`width: ${data.sizeLogo}px;`" />
+          <img :src="require(`../assets/icons/finance/${data.logo}.png`)" style="margin-right: 4px;" :style="`width: ${data.sizeLogo}px;`" />
           <div class="sp-h--16"></div>
           <img src="../assets/icons/ic_visibility_second.svg" style="height: 16px; margin-right: 6px;" />
         </div>
@@ -21,15 +21,27 @@
       <div class="sp-v--12"></div>
       <div class="box-input">
         <div class="input-group">
-          <input v-numericOnly @click="keyMonitor" @keyup.enter="$event.target.blur() + keyMonitorFix()" type="tel" v-model="inputTelepon" class="input" name="" placeholder="No. Pelanggan TV Kabel" maxlength="8">
+          <input v-numericOnly type="text" v-model="inputTelepon" class="input" name="" placeholder="No. Kontrak" maxlength="12">
           <div class="sp-h--16"></div>
           <img class="icon" src="../assets/icons/account-card-details.png" />
         </div>
       </div>
       <div class="sp-v--12"></div>
+      <div v-if="inputTelepon.length === 12 && idLayanan !== ''" class="tagihan">
+        <p class="text">
+          Masukkan Nominal Pembayaran. <br>
+          Pembayaran min. Rp10.000
+        </p>
+        <div class="box-input" style="margin-top: 4px;">
+          <div class="input-group">
+            <input v-numericOnly type="text" v-model="inputTagihan" class="input" name="" placeholder="Pembayaran">
+          </div>
+        </div>
+        <span v-if="" class="error-text">Nominal kurang dari Rp10.000</span>
+      </div>
     </div>
     <!-- Transaksi -->
-    <div v-if="inputTelepon == 10335663 && idLayanan !== ''" class="transaksi">
+    <div v-if="inputTagihan >= 10000 && inputTagihan <= 2000000 && idLayanan !== ''" class="transaksi">
       <div class="transaksi_header">
         <p class="title">Detail Transaksi</p>
       </div>
@@ -69,7 +81,7 @@
     </div>
     <div class="sp-v--58"></div>
     <!-- Popup -->
-    <Popup :positionPopup="popUpState" title="Promo Terbaru" icon="ic_voucherfill" :text="textPromo" kode="NONTONTERUS" />
+    <Popup title="Promo Terbaru" icon="ic_voucherfill" :text="textPromo" kode="NONTONTERUS" />
 
     <!-- Search Media -->
     <div class="search-layanan" :style="`right: ${widthScreen}px`">
@@ -82,7 +94,7 @@
       <div class="sp-v--8"></div>
       <div v-for="data in dataLayanan" :key="data.id" @click="idLayanan = data.id; closeSearch()" class="search-layanan_content">
         <div class="search-layanan_content_left">
-          <img :src="require(`../assets/icons/${data.logo}.png`)" class="icon" alt="" />
+          <img :src="require(`../assets/icons/finance/${data.logo}.png`)" class="icon" alt="" />
         </div>
         <div class="search-layanan_content_right">
           <p class="text">{{ data.name }}</p>
@@ -99,61 +111,61 @@ import Banner from '../components/Banner.vue';
 import Popup from '../components/Popup.vue';
 
 export default {
-  name: 'tvkabel',
+  name: 'kredivo',
   data() {
     return {
       textPromo: 'Dapatkan cashback sebesar Rp10.000 setiap pembayaran TV Kabel. Berlaku di Aplikasi',
       inputTelepon: '',
+      inputTagihan: '',
       idLayanan: '',
-       popUpState: 'fixed',
       widthScreen: `-${window.innerWidth}`,
       dataLayanan: [
         {
           id: 1,
-          name: 'CBN',
-          logo: 'logo_cbn',
-          sizeLogo: 22
+          name: 'Kredivo',
+          logo: 'logo_kredivo',
+          sizeLogo: 40
         },
         {
           id: 2,
-          name: 'BigTv',
-          logo: 'logo_bigtv',
+          name: 'AEON Credit Service Indonesia',
+          logo: 'logo_aeon',
           sizeLogo: 22
         },
         {
           id: 3,
-          name: 'First Media',
-          logo: 'logo_first-media',
-          sizeLogo: 22
+          name: 'Artha Prima Finance',
+          logo: 'logo_artha',
+          sizeLogo: 40
         },
         {
           id: 4,
-          name: 'Indihome',
-          logo: 'logo_indihome',
+          name: 'BFI Finance',
+          logo: 'logo_bfi',
           sizeLogo: 22
         },
         {
           id: 5,
-          name: 'MNC Vision',
-          logo: 'logo_vision',
-          sizeLogo: 40
+          name: 'Home Credit',
+          logo: 'logo_home-credit',
+          sizeLogo: 22
         },
         {
           id: 6,
-          name: 'K-Vision',
-          logo: 'logo_kvision',
+          name: 'Indomobil Finance',
+          logo: 'logo_indomobile',
           sizeLogo: 40
         },
         {
           id: 7,
-          name: 'NexMedia',
-          logo: 'logo_nextmedia',
+          name: 'Mandiri Tunas Finance',
+          logo: 'logo_mandiri',
           sizeLogo: 40
         },
         {
           id: 8,
-          name: 'Transvision',
-          logo: 'logo_transvision',
+          name: 'Mega Auto Finance',
+          logo: 'logo_mega',
           sizeLogo: 40
         }
       ]
@@ -167,18 +179,6 @@ export default {
   methods: {
     closeSearch() {
       this.widthScreen = `-${window.innerWidth}`;
-    },
-    keyMonitor() {
-      if (this.popUpState == 'fixed') {
-        this.popUpState = 'absolute';
-        console.log(this.popUpState)
-      }
-    },
-    keyMonitorFix() {
-      if (this.popUpState == 'absolute') {
-        this.popUpState = 'fixed';
-        console.log(this.popUpState)
-      }
     }
   },
   computed: {
@@ -423,6 +423,27 @@ export default {
         line-height: 20px;
       }
     }
+  }
+}
+
+.tagihan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .text {
+    text-align: left;
+    font-size: 14px;
+    color: #52565F;
+    letter-spacing: 0;
+    line-height: 20px;
+  }
+  .error-text {
+    margin-top: 8px;
+    text-align: left;
+    font-size: 12px;
+    color: #FF766D;
+    letter-spacing: 0;
+    line-height: 18px;
   }
 }
 </style>

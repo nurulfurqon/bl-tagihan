@@ -3,11 +3,11 @@ import Router from 'vue-router';
 import Home from './views/Home.vue';
 import Checkout from './views/Checkout.vue';
 import Tv from './views/TvKabel.vue';
+import Kredivo from './views/Kredivo.vue';
 
 Vue.use(Router);
 
 export default new Router({
-  mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
@@ -24,6 +24,11 @@ export default new Router({
       path: '/tv',
       name: 'tvkabel',
       component: Tv,
+    },
+    {
+      path: '/kredivo',
+      name: 'kredivo',
+      component: Kredivo,
     },
   ],
 });

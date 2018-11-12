@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header_content">
-      <img v-if="iconLeft !== null" :src="require(`../assets/icons/${iconLeft}.svg`)" alt="Icon Back">
+      <img @click="$router.go(-1)" v-if="iconLeft !== null" :src="require(`../assets/icons/${iconLeft}.svg`)" alt="Icon Back">
       <div class="sp-h--12"></div>
       <p v-if="title !== null" class="title-header">{{ title }}</p>
     </div>
@@ -27,6 +27,10 @@ export default {
       type: String,
       default: null,
     },
+    linkBack: {
+      type: String,
+      default: null,
+    }
   },
 };
 </script>

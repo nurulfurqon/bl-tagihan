@@ -4,14 +4,16 @@
     <div class="sp-v--53"></div>
     <Banner title="Hi, Burhanudin Yusuf !" text="Masukkan No. Indihome kamu ya"/>
     <div class="form-set">
-      <div class="box-input">
-        <p class="text">Indihome / Telepon</p>
-      </div>
+      <router-link to="/tv" class="button-link">
+        <div class="box-input">
+          <p class="text">Indihome / Telepon</p>
+        </div>
+      </router-link>
       <div class="sp-v--12"></div>
       <div class="box-input">
         <div class="input-group">
-          <input v-numericOnly type="text" v-model="inputTelepon" class="input" name="" placeholder="No Telepon" maxlength="12">
-          <img v-if="inputTelepon.length === 12" class="icon2" src="../assets/icons/telkom.png" />
+          <input type="tel" @click="keyMonitor" @keyup.enter="$event.target.blur() + keyMonitorFix()" v-numericOnly v-model="inputTelepon" class="input" name="" placeholder="No Telepon" maxlength="12">
+          <img v-if="inputTelepon == 141129110591" class="icon2" src="../assets/icons/telkom.png" />
           <div class="sp-h--16"></div>
           <img class="icon" src="../assets/icons/account-card-details.png" />
         </div>
@@ -19,7 +21,7 @@
       <div class="sp-v--12"></div>
     </div>
     <!-- Transaksi -->
-    <div v-if="inputTelepon.length === 12" class="transaksi">
+    <div v-if="inputTelepon == 141129110591" class="transaksi">
       <div class="transaksi_header">
         <p class="title">Detail Transaksi</p>
       </div>
@@ -62,9 +64,9 @@
         </router-link>
       </div>
     </div>
-
+    <div class="sp-v--58"></div>
     <!-- Popup -->
-    <Popup title="Promo Terbaru" icon="ic_voucherfill" :text="textPromo" kode="BAYARTELKOM" />
+    <Popup :positionPopup="popUpState" title="Promo Terbaru" icon="ic_voucherfill" :text="textPromo" kode="BAYARTELKOM" />
   </div>
 </template>
 
@@ -80,12 +82,33 @@ export default {
     return {
       textPromo: 'Dapatkan cashback sebesar Rp10.000 setiap pembayaran Telkom. Hanya berlaku di Aplikasi',
       inputTelepon: '',
+      popUpState: 'fixed',
     };
   },
   components: {
     Header,
     Banner,
     Popup,
+  },
+  methods: {
+    keyMonitor() {
+      if (this.popUpState == 'fixed') {
+        this.popUpState = 'absolute';
+        console.log(this.popUpState)
+      }
+    },
+    keyMonitorFix() {
+      if (this.popUpState == 'absolute') {
+        this.popUpState = 'fixed';
+        console.log(this.popUpState);
+      }
+    }
+  },
+  created() {
+    if (this.popUpState == 'absoulte') {
+      this.popUpState = 'fixed';
+    }
+    console.log(this.popUpState);
   },
   directives: {
     numericOnly: {
@@ -122,6 +145,9 @@ export default {
   width: 100%;
   padding: 0 16px;
   margin-top: -25px;
+  a {
+    text-decoration: none !important;
+  }
   .box-input {
     position: relative;
     display: flex;
@@ -226,6 +252,9 @@ export default {
       text-decoration: none;
       display: flex;
       margin: 12px 8px;
+      p {
+        text-decoration: none !important;
+      }
     }
     .button-bayar {
       width: 100%;

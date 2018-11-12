@@ -1,7 +1,7 @@
 <template>
 <div v-if="title !== null && text !== null">
   <div v-if="popupActive" @click="popupActive = !popupActive; removeTersalin()" class="overlay"></div>
-  <div class="popup" :style="bottomVal()">
+  <div class="popup" :class="positionHeaderPop()" :style="bottomVal()">
     <div @click="popupActive = !popupActive; removeTersalin()" class="popup_header" :style="bgColorVal()">
       <div class="popup_header_content">
         <img :src="require(`../assets/icons/${icon}.svg`)" class="icon" />
@@ -58,6 +58,10 @@ export default {
       type: String,
       default: null,
     },
+    positionPopup: {
+      type: String,
+      default: 'fixed',
+    }
   },
   data() {
     return {
@@ -70,6 +74,13 @@ export default {
       let icon;
       this.popupActive !== true ? icon = 'ic_visibility' : icon = 'ic_invisibility';
       return icon;
+    },
+    positionHeaderPop() {
+      if (this.positionPopup == 'fixed') {
+        return 'popup-fixed';
+      } else {
+        return 'popup-absolute';
+      }
     },
     bottomVal() {
       let bottom;
@@ -102,9 +113,13 @@ export default {
   opacity: 0.48;
   background: #25282F;
 }
-  .popup {
+  .popup-fixed {
     position: fixed;
-    display: flex;
+  }
+  .popup-absolute {
+    position: absolute;
+  }
+  .popup {
     width: inherit;
     transition: all .3s ease-in-out;
     flex-direction: column;

@@ -3,7 +3,7 @@
     <img class="img-banner" src="../assets/icons/bg_slide.png" alt="Banner slide">
     <div class="box-content-banner">
       <img class="bg-comment" src="../assets/icons/bg_box-comment.svg" />
-      <img class="illustration-banner" src="../assets/icons/Illustration_Mas-Zaky.svg" alt="Illustration mas zaky">
+      <img class="illustration-banner" src="../assets/icons/Illustration_Mas-Zaky.png" alt="Illustration mas zaky">
       <div v-if="title !== null && text !== null" class="box-text">
         <p class="title">{{ title }}</p>
         <p class="text">{{ text }}</p>
