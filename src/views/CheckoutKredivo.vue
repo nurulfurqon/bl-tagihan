@@ -58,6 +58,8 @@
         <img src="../assets/icons/ic_keyboard_arrow_right.svg" />
       </div>
     </div>
+    <div class="line--12"></div>
+    <div class="sp-v--116"></div>
     <div class="card" style="position: absolute; bottom: 0;">
       <div class="card_content">
         <div class="card_content_text">

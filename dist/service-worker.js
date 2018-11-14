@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.86ee9a4e30486cd2f8672a10ca12d88c.js"
+  "/precache-manifest.75d68ab7c216afc5b02ab0f36a70fbc2.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "bl-tagihan"});

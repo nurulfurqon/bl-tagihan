@@ -31,7 +31,9 @@
     <!-- Transaksi -->
     <div v-if="inputTelepon == 10335663 && idLayanan !== ''" class="transaksi">
       <div class="transaksi_header">
-        <p class="title">Detail Transaksi</p>
+        <router-link to="/kredivo" class="button-link" style="text-decoration: none;">
+          <p class="title">Detail Transaksi</p>
+        </router-link>
       </div>
       <div class="transaksi_content">
         <div class="transaksi_content_text">
@@ -327,7 +329,7 @@ export default {
     .button-link {
       text-decoration: none;
       display: flex;
-      margin: 12px 8px;
+      margin: 12px 0;
     }
     .button-bayar {
       width: 100%;

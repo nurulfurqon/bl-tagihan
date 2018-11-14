@@ -251,7 +251,7 @@ export default {
     .button-link {
       text-decoration: none;
       display: flex;
-      margin: 12px 8px;
+      margin: 12px 0;
       p {
         text-decoration: none !important;
       }

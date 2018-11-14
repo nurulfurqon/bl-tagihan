@@ -34,7 +34,7 @@
         </p>
         <div class="box-input" style="margin-top: 4px;">
           <div class="input-group">
-            <input v-numericOnly type="tel" @click="keyMonitor" @keyup.enter="$event.target.blur() + keyMonitorFix()" v-model="inputTagihan" class="input" name="" placeholder="Pembayaran">
+            <input v-numericOnly maxlength="9" type="tel" @click="keyMonitor" @keyup.enter="$event.target.blur() + keyMonitorFix()" v-model="inputTagihan" class="input" name="" placeholder="Pembayaran">
           </div>
         </div>
         <span v-if="inputTagihan < 10000 && inputTagihan !== ''" class="error-text">Nominal kurang dari Rp10.000</span>
@@ -43,7 +43,7 @@
       </div>
     </div>
     <!-- Transaksi -->
-    <div v-if="inputTagihan >= 10000 && inputTagihan <= 2000000 && idLayanan !== ''" class="transaksi">
+    <div v-if="inputTelepon == 7837268736 && idLayanan !== ''" class="transaksi">
       <div class="transaksi_header">
         <p class="title">Detail Transaksi</p>
       </div>
@@ -72,13 +72,16 @@
       <div class="transaksi_content">
         <div class="transaksi_content_text">
           <p class="text-first text-first--medium">TOTAL TAGIHAN</p>
-          <p class="text-second text-second--medium">Rp{{ formatRp(Number(inputTagihan) + 2500) }}</p>
+          <p class="text-second text-second--medium">Rp{{ formatRp2(Number(inputTagihan) + 2500) }}</p>
         </div>
-        <router-link :to="`/checkoutkredivo/${inputTelepon}/${inputTagihan}`" class="button-link">
+        <router-link v-if="inputTagihan >= 10000 && inputTagihan <= 2000000" :to="`/checkoutkredivo/${inputTelepon}/${inputTagihan}`" class="button-link">
           <div class="button-bayar">
             <p class="text">Bayar</p>
           </div>
         </router-link>
+        <div v-else class="button-bayar" style="opacity: 0.7; margin: 12px 0;">
+          <p class="text">Bayar</p>
+        </div>
       </div>
     </div>
     <div class="sp-v--58"></div>
@@ -118,7 +121,7 @@ export default {
     return {
       textPromo: 'Dapatkan cashback pembayaran tagihan Kredivo sebesar 50% hanya berlaku di aplikasi.',
       inputTelepon: '',
-      inputTagihan: '',
+      inputTagihan: '2000000',
       idLayanan: '',
       popUpState: 'fixed',
       widthScreen: `-${window.innerWidth}`,
@@ -191,6 +194,15 @@ export default {
     formatRp(value) {
       if (this.inputTagihan > 0) {
         return value.toString().replace(/(\d)(?=(\d{3})+(?:\.\d+)?$)/g, "$1\.");
+      } else {
+        return 0;
+      }
+    },
+    formatRp2(value) {
+      if (this.inputTagihan > 0) {
+        return value.toString().replace(/(\d)(?=(\d{3})+(?:\.\d+)?$)/g, "$1\.");
+      } else {
+        return '2500'.toString().replace(/(\d)(?=(\d{3})+(?:\.\d+)?$)/g, "$1\.");;
       }
     },
     keyMonitor() {
@@ -355,7 +367,7 @@ export default {
     .button-link {
       text-decoration: none;
       display: flex;
-      margin: 12px 8px;
+      margin: 12px 0;
     }
     .button-bayar {
       width: 100%;
