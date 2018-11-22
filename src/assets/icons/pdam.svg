@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="85.9549907%" y1="18.2690065%" x2="13.9225746%" y2="80.990555%" id="linearGradient-1">
+            <stop stop-color="#37C6F3" offset="0%"></stop>
+            <stop stop-color="#4E95D0" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="0 0 9.99985 0 9.99985 15 0 15"></polygon>
+        <polygon id="path-4" points="0 0 11.99975 0 11.99975 18 0 18"></polygon>
+    </defs>
+    <g id="📱-Mobile---ALCHEMY" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-118.000000, -702.000000)">
+            <g id="VP-Copy-7" transform="translate(27.000000, 618.000000)">
+                <g id="Group-17" transform="translate(91.000000, 84.000000)">
+                    <rect id="Rectangle-2-Copy-3" fill="url(#linearGradient-1)" x="0" y="0" width="40" height="40" rx="16"></rect>
+                    <g id="Group-31-Copy-8" transform="translate(8.000000, 8.000000)">
+                        <g id="Group-18-Copy-2" fill="#FFFFFF" opacity="0">
+                            <rect id="Rectangle-4" x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                        <g id="Group" transform="translate(6.000000, 3.500000)">
+                            <g id="Group-3" transform="translate(1.000000, 1.000000)">
+                                <mask id="mask-3" fill="white">
+                                    <use xlink:href="#path-2"></use>
+                                </mask>
+                                <g id="Clip-2"></g>
+                                <path d="M9.3255,7.5 L9.331,7.5 L5,0 L0.669,7.5 L0.674,7.5 C0.248,8.236 0,9.088 0,10 C0,12.7615 2.2385,15 5,15 C7.7615,15 10,12.7615 10,10 C10,9.088 9.752,8.236 9.3255,7.5" id="Fill-1" fill="#FFFFFF" opacity="0.5" mask="url(#mask-3)"></path>
+                            </g>
+                            <g id="Group-6">
+                                <mask id="mask-5" fill="white">
+                                    <use xlink:href="#path-4"></use>
+                                </mask>
+                                <g id="Clip-5"></g>
+                                <path d="M11.191,9 L11.1975,9 L6,0 L0.803,9 L0.8095,9 C0.298,9.883 0,10.906 0,12 C0,15.3135 2.6865,18 6,18 C9.314,18 12,15.3135 12,12 C12,10.906 11.7025,9.883 11.191,9" id="Fill-4" fill="#FFFFFF" mask="url(#mask-5)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

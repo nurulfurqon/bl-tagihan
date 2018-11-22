@@ -5,6 +5,9 @@ import Checkout from './views/Checkout.vue';
 import Tv from './views/TvKabel.vue';
 import Kredivo from './views/Kredivo.vue';
 import CheckoutKredivo from './views/CheckoutKredivo.vue';
+import HomeTelkom from './views/HomeTelkom.vue';
+import HomeTvKabel from './views/HomeTvKabel.vue';
+import HomeKredivo from './views/HomeKredivo.vue';
 
 Vue.use(Router);
 
@@ -13,8 +16,23 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'HomeTelkom',
+      component: HomeTelkom,
+    },
+    {
+      path: '/telkom',
       name: 'home',
       component: Home,
+    },
+    {
+      path: '/home-tvkabel',
+      name: 'HomeTvKabel',
+      component: HomeTvKabel,
+    },
+    {
+      path: '/home-kredivo',
+      name: 'HomeKredivo',
+      component: HomeKredivo,
     },
     {
       path: '/checkout/:id/:jumlah',

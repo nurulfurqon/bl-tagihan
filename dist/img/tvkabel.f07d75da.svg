@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 14</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="9.96110477%" y1="89.390006%" x2="87.2106176%" y2="12.3401376%" id="linearGradient-1">
+            <stop stop-color="#A7E0F3" offset="0%"></stop>
+            <stop stop-color="#4589DC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="📱-Mobile---ALCHEMY" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-282.000000, -618.000000)">
+            <g id="Group-14" transform="translate(282.000000, 618.000000)">
+                <g id="Group-10" fill="url(#linearGradient-1)">
+                    <g id="ic_Dope">
+                        <rect id="Rectangle-2-Copy-17" transform="translate(20.000000, 20.000000) rotate(-180.000000) translate(-20.000000, -20.000000) " x="0" y="0" width="40" height="40" rx="16"></rect>
+                    </g>
+                </g>
+                <g id="ic_tvkabel" transform="translate(8.000000, 8.000000)">
+                    <polygon id="Path" fill="#E5E5E4" opacity="0" points="0 24 24 24 24 0 0 0"></polygon>
+                    <path d="M8.5,16.5 L6.5,18.5" id="Stroke-18" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M13.5,16.5 L15.5,18.5" id="Stroke-20" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M16.5,13.5 C16.5,10.763 17.1115,8.6375 17.378,7.841 C17.4465,7.636 17.6365,7.5 17.8525,7.5 L20.5,7.5 L20.5,5 C20.5,4.7235 20.2765,4.5 20,4.5 L2,4.5 C1.7235,4.5 1.5,4.7235 1.5,5 L1.5,16 C1.5,16.2765 1.7235,16.5 2,16.5 L16.742,16.5 C16.603,15.6345 16.5,14.6195 16.5,13.5 Z" id="Stroke-22" fill-opacity="0.5" fill="#FFFFFF"></path>
+                    <path d="M17.85255,19.5 L21.14755,19.5 C21.36305,19.5 21.55305,19.364 21.62205,19.159 C21.88855,18.3625 22.50005,16.237 22.50005,13.5 C22.50005,10.763 21.88855,8.6375 21.62205,7.841 C21.55305,7.636 21.36305,7.5 21.14755,7.5 L17.85255,7.5 C17.63655,7.5 17.44655,7.636 17.37805,7.841 C17.11155,8.6375 16.50005,10.763 16.50005,13.5 C16.50005,16.237 17.11155,18.3625 17.37805,19.159 C17.44655,19.364 17.63655,19.5 17.85255,19.5 Z" id="Stroke-24" fill="#FFFFFF"></path>
+                    <path d="M20,12 L21,12 L21,11 L20,11 L20,12 Z M18,12 L19,12 L19,11 L18,11 L18,12 Z M20,10 L21,10 L21,9 L20,9 L20,10 Z M18,10 L19,10 L19,9 L18,9 L18,10 Z M20,13 L19,13 L19,14 L18,14 L18,15 L19,15 L19,16 L20,16 L20,15 L21,15 L21,14 L20,14 L20,13 Z M7.7775,9.916 L10.7775,7.916 C11.0075,7.7625 11.0695,7.4525 10.916,7.2225 C10.7625,6.9925 10.4525,6.931 10.2225,7.084 L7.2225,9.084 C6.9925,9.2375 6.9305,9.5475 7.084,9.7775 C7.18,9.922 7.339,10 7.5005,10 C7.5955,10 7.692,9.9725 7.7775,9.916 Z M11.7775,13.916 L14.7775,11.916 C15.0075,11.7625 15.0695,11.4525 14.916,11.2225 C14.7625,10.993 14.4525,10.931 14.2225,11.084 L11.2225,13.084 C10.9925,13.2375 10.9305,13.5475 11.084,13.7775 C11.18,13.922 11.339,14 11.5005,14 C11.5955,14 11.692,13.9725 11.7775,13.916 Z M6.5005,14 C6.339,14 6.18,13.922 6.084,13.7775 C5.9305,13.5475 5.9925,13.2375 6.2225,13.084 L15.2225,7.084 C15.4525,6.931 15.763,6.9925 15.916,7.2225 C16.0695,7.4525 16.0075,7.7625 15.7775,7.916 L6.7775,13.916 C6.692,13.9725 6.5955,14 6.5005,14 Z" id="Fill-26" fill="#FFFFFF"></path>
+                    <path d="M20.5,17.5 L18.5,17.5" id="Stroke-28" stroke-opacity="0.5" stroke="#FFFFFF" stroke-linecap="square" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

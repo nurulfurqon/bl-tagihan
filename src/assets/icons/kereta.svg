@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 37</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="85.9549907%" y1="18.2690065%" x2="13.9225746%" y2="80.990555%" id="linearGradient-1">
+            <stop stop-color="#6793CC" offset="0%"></stop>
+            <stop stop-color="#6763AC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="📱-Mobile---ALCHEMY" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-36.000000, -702.000000)">
+            <g id="VP-Copy-7" transform="translate(27.000000, 618.000000)">
+                <g id="Group-37" transform="translate(9.000000, 84.000000)">
+                    <g id="Group-35">
+                        <rect id="Rectangle-2-Copy-6" fill="url(#linearGradient-1)" x="0" y="0" width="40" height="40" rx="16"></rect>
+                        <g id="Group" transform="translate(8.000000, 8.000000)">
+                            <polygon id="Fill-3" fill="#E6E6E6" opacity="0" points="0 24 24 24 24 0 0 0"></polygon>
+                            <path d="M18,6.3635 L18,12 L6,12 L6,6.3635 C6,5.8115 6.448,5.3635 7,5.3635 L17,5.3635 C17.552,5.3635 18,5.8115 18,6.3635 M17,16 C16.448,16 16,15.552 16,15 C16,14.4475 16.448,14 17,14 C17.552,14 18,14.4475 18,15 C18,15.552 17.552,16 17,16 M7,16 C6.448,16 6,15.552 6,15 C6,14.4475 6.448,14 7,14 C7.552,14 8,14.4475 8,15 C8,15.552 7.552,16 7,16 M9.5,3 L14.5,3 C14.776,3 15,3.224 15,3.5 C15,3.776 14.776,4 14.5,4 L9.5,4 C9.224,4 9,3.776 9,3.5 C9,3.224 9.224,3 9.5,3 M16,1 L8,1 C5.8,1 4,2.8 4,5 L4,17 C4,17.55 4.45,18 5,18 L19,18 C19.55,18 20,17.55 20,17 L20,5 C20,2.8 18.2,1 16,1" id="Fill-1" fill="#FFFFFF"></path>
+                            <path d="M7.0275,19.7625 L16.926,19.7625 L17.5435,20.7625 L6.4105,20.7625 L7.0275,19.7625 Z M5.1755,22.7625 L5.793,21.7625 L18.161,21.7625 L18.778,22.7625 L19.9535,22.7625 L16.396,17 L15.545,17.525 L16.3085,18.7625 L7.6445,18.7625 L8.4085,17.525 L7.5575,17 L4,22.7625 L5.1755,22.7625 Z" id="Fill-16" fill="#FFFFFF" opacity="0.5"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

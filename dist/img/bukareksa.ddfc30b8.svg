@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 41</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="13.9225746%" y1="80.990555%" x2="85.9549907%" y2="18.2690065%" id="linearGradient-1">
+            <stop stop-color="#FBC140" offset="0%"></stop>
+            <stop stop-color="#FFB576" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="0 18 18 18 18 0 0 0"></polygon>
+    </defs>
+    <g id="📱-Mobile---ALCHEMY" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-282.000000, -702.000000)">
+            <g id="VP-Copy-7" transform="translate(27.000000, 618.000000)">
+                <g id="Group-10" transform="translate(243.000000, 84.000000)">
+                    <g id="Group-41" transform="translate(12.000000, 0.000000)">
+                        <g id="Group-5">
+                            <rect id="Rectangle-2-Copy-5" fill="url(#linearGradient-1)" x="0" y="0" width="40" height="40" rx="16"></rect>
+                            <g id="Group-31-Copy-2" transform="translate(8.000000, 8.000000)">
+                                <g id="Group-18-Copy-2" fill="#FFFFFF" opacity="0">
+                                    <rect id="Rectangle-4" x="0" y="0" width="24" height="24"></rect>
+                                </g>
+                                <g id="Group" transform="translate(3.000000, 3.000000)">
+                                    <polygon id="Fill-1" fill="#FFFFFF" opacity="0.5" points="16 5 13 10.5 5.9995 9.5 1.9995 13 0 13.5 0 18 18 18 18 5"></polygon>
+                                    <g id="Group-19">
+                                        <path d="M3,13.5 C3,14.3285 2.3285,15 1.5,15 C0.6715,15 0,14.3285 0,13.5 C0,12.6715 0.6715,12 1.5,12 C2.3285,12 3,12.6715 3,13.5" id="Fill-2" fill="#FFFFFF"></path>
+                                        <path d="M7.5,9.5 C7.5,10.3285 6.8285,11 6,11 C5.1715,11 4.5,10.3285 4.5,9.5 C4.5,8.6715 5.1715,8 6,8 C6.8285,8 7.5,8.6715 7.5,9.5" id="Fill-4" fill="#FFFFFF"></path>
+                                        <path d="M14.5,10.5 C14.5,11.3285 13.8285,12 13,12 C12.1715,12 11.5,11.3285 11.5,10.5 C11.5,9.6715 12.1715,9 13,9 C13.8285,9 14.5,9.6715 14.5,10.5" id="Fill-6" fill="#FFFFFF"></path>
+                                        <path d="M18,5 C18,5.8285 17.3285,6.5 16.5,6.5 C15.6715,6.5 15,5.8285 15,5 C15,4.1715 15.6715,3.5 16.5,3.5 C17.3285,3.5 18,4.1715 18,5" id="Fill-8" fill="#FFFFFF"></path>
+                                        <mask id="mask-3" fill="white">
+                                            <use xlink:href="#path-2"></use>
+                                        </mask>
+                                        <g id="Clip-11"></g>
+                                        <g id="Group-18" opacity="0.5" mask="url(#mask-3)" fill="#FFFFFF">
+                                            <polygon id="Fill-10" points="9.5 5 10.5 5 10.5 1 9.5 1"></polygon>
+                                            <polygon id="Fill-12" points="8 3.5 12 3.5 12 2.5 8 2.5"></polygon>
+                                            <polygon id="Fill-13" points="0 4.5 1 4.5 1 0 0 0"></polygon>
+                                            <path d="M1,2 L1.5,2 C1.7755,2 2,1.776 2,1.5 C2,1.224 1.7755,1 1.5,1 L1,1 L1,2 Z M1.5,3 L0,3 L0,0 L1.5,0 C2.327,0 3,0.673 3,1.5 C3,2.327 2.327,3 1.5,3 Z" id="Fill-14"></path>
+                                            <polygon id="Fill-15" points="4 6 5 6 5 1.5 4 1.5"></polygon>
+                                            <path d="M5,3.5 L5.5,3.5 C5.7755,3.5 6,3.276 6,3 C6,2.724 5.7755,2.5 5.5,2.5 L5,2.5 L5,3.5 Z M5.5,4.5 L4,4.5 L4,1.5 L5.5,1.5 C6.327,1.5 7,2.173 7,3 C7,3.827 6.327,4.5 5.5,4.5 Z" id="Fill-16"></path>
+                                            <path d="M3,4.5 L2,4.5 L2,4 C2,3.4485 1.5515,3 1,3 L1,2 C2.103,2 3,2.897 3,4 L3,4.5 Z" id="Fill-17"></path>
+                                        </g>
+                                        <polygon id="Fill-18" fill="#FFFFFF" mask="url(#mask-3)" points="1.8323 13.87355 1.1678 13.12655 5.8413 8.97205 12.7513 9.95955 16.0783 4.73155 16.9218 5.26855 13.2488 11.04055 6.1588 10.02805"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
